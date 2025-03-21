@@ -23,7 +23,7 @@ public class ReadFileV2 {
         long endTime = System.currentTimeMillis();
 
         System.out.println("File create: " + FILE_NAME);
-        System.out.println("File size: " + FILE_SIZE / 1024 / 1024 + "MB");
+        System.out.println("File size: " + (fileSize / 1024 / 1024) + "MB");
         System.out.println("Time taken: " + (endTime - startTime) + "ms"); // 6ms
     }
 }
