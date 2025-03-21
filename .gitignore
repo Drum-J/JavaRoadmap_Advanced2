@@ -31,3 +31,4 @@ bin/
 ### custom ###
 .idea
 advanced2.iml
+temp/buffered.dat
