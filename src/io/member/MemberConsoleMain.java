@@ -1,5 +1,6 @@
 package io.member;
 
+import io.member.impl.DataMemberRepository;
 import io.member.impl.FileMemberRepository;
 import io.member.impl.MemoryMemberRepository;
 
@@ -11,7 +12,8 @@ import java.util.List;
 public class MemberConsoleMain {
 
     //private static final MemberRepository repository = new MemoryMemberRepository();
-    private static final MemberRepository repository = new FileMemberRepository();
+    //private static final MemberRepository repository = new FileMemberRepository();
+    private static final MemberRepository repository = new DataMemberRepository();
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
