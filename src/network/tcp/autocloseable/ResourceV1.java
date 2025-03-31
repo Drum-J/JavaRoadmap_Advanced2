@@ -13,7 +13,7 @@ public class ResourceV1 {
 
     public void callEx() throws CallException {
         System.out.println(name + " callEx");
-        throw new CallException(name + "ex");
+        throw new CallException(name + " ex");
     }
 
     public void close() {
@@ -22,6 +22,6 @@ public class ResourceV1 {
 
     public void closeEx() throws CloseException {
         System.out.println(name + " closeEx");
-        throw new CloseException(name + "ex");
+        throw new CloseException(name + " ex");
     }
 }
