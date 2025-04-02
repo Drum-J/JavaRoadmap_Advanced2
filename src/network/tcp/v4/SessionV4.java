@@ -40,13 +40,6 @@ public class SessionV4 implements Runnable {
                 output.writeUTF(toSend);
                 log("server -> client: " + toSend);
             }
-
-            // 자원 정리
-            log("연결 종료: " + socket);
-            input.close();
-            output.close();
-            socket.close();
-
         } catch (IOException e) {
             log(e);
         } finally {
