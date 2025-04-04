@@ -9,7 +9,7 @@ import static util.MyLogger.log;
 
 public class WriteHandler implements Runnable {
 
-    private static String DELIMITER = "|";
+    private static final String DELIMITER = "|";
 
     private final DataOutputStream output;
     private final Client client;
@@ -56,7 +56,7 @@ public class WriteHandler implements Runnable {
     }
 
     private static String inputUsername(Scanner scanner) {
-        System.out.println("이름을 입력하세요.");
+        System.out.print("이름을 입력하세요: ");
         String username;
         do {
             username = scanner.nextLine();
